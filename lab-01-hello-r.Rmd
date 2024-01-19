@@ -7,6 +7,9 @@ output:
     tufte_variant: "envisioned"
     highlight: pygments
 link-citations: true
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 ```{marginfigure}
@@ -147,53 +150,63 @@ And by others, we mean the course teaching team (your repos in this course are p
 In order to push your changes to GitHub, click on **Push**.
 This will prompt a dialogue box where you first need to enter your user name, and then your Personal Access Token.
 
-The box to enter your username looks like this: 
+The box to enter your username looks like this:
 
 ```{r git-personal-token-1, fig.fullwidth=TRUE, echo = FALSE}
 knitr::include_graphics("img/git-personal-token-1.png")
 ```
 
-When you enter this and hit enter it asks you to enter your password. However what this really wants is a personal access token and if you just enter your password you see the message below: 
+When you enter this and hit enter it asks you to enter your password.
+However what this really wants is a personal access token and if you just enter your password you see the message below:
 
 ```{r git-personal-token-2, fig.fullwidth=TRUE, echo = FALSE}
 knitr::include_graphics("img/git-personal-token-2.png")
 ```
 
-Here are the instructions to get a Personal Access Token: 
+Here are the instructions to get a Personal Access Token:
 
-[Go to your github user account settings](https://github.com/settings/profile). 
+[Go to your github user account settings](https://github.com/settings/profile).
 
-Scroll down to where is says developer settings on the left hand side and click this. Then you will see the following menu below where you will click ***Tokens (classic)***. 
+Scroll down to where is says developer settings on the left hand side and click this.
+Then you will see the following menu below where you will click ***Tokens (classic)***.
 
 ```{r git-personal-token-3, fig.fullwidth=TRUE, echo = FALSE}
 knitr::include_graphics("img/git-personal-token-3.png")
 ```
 
-Once you have done this click ***Generate a personal access token***. It will take you to the page below: 
+Once you have done this click ***Generate a personal access token***.
+It will take you to the page below:
 
 ```{r git-personal-token-4, fig.fullwidth=TRUE, echo = FALSE}
 knitr::include_graphics("img/git-personal-token-4.png")
 ```
 
-Then change the following: 
+Then change the following:
 
-1. Note
-  - data-science-class
-2. Expiration
-  - custom
-  - ends may 31, 2024
-3. Select Scopes
-  - ***repo***
-  
-Scroll to the bottom of this page and click to finish. You then have generated a personal access token. 
+1.  Note
+
+-   data-science-class
+
+2.  Expiration
+
+-   custom
+-   ends may 31, 2024
+
+3.  Select Scopes
+
+-   ***repo***
+
+Scroll to the bottom of this page and click to finish.
+You then have generated a personal access token.
 
 ```{r git-personal-token-5, fig.fullwidth=TRUE, echo = FALSE}
 knitr::include_graphics("img/git-personal-token-5.png")
 ```
-Copy this token and go back to the previous directions about using the ***push*** command. When prompted enter your github username and then when prompted for password paste the token we just generated in. 
 
-Then complete the lab as directed in the video. 
+Copy this token and go back to the previous directions about using the ***push*** command.
+When prompted enter your github username and then when prompted for password paste the token we just generated in.
 
+Then complete the lab as directed in the video.
 
 ## Packages
 
@@ -226,7 +239,8 @@ This command must be ran in the Console.
 
 1.  Based on the help file, how many rows and how many columns does the `datasaurus_dozen` file have? What are the variables included in the data frame? Add your responses to your lab report.
 
-There are 1846 rows and 3 variables. The variables are **dataset**, **x**, and **y**.
+There are 1846 rows and 3 variables.
+The variables are **dataset**, **x**, and **y**.
 
 Let's take a look at what these datasets are.
 To do so we can make a *frequency table* of the dataset variable:
